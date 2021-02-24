@@ -114,7 +114,7 @@ type TableAirDeco struct {
 // NoDecoTable returns a typed and serialized US Navy air
 // no-decompression table from rev7 of the US Navy dive manual.
 func NoDecoTable() (TableNdl, error) {
-	jsonFile, err := os.Open("JSON/usnavy-air-nodeco-rev7.json")
+	jsonFile, err := os.Open("../JSON/usnavy-air-nodeco-rev7.json")
 	if err != nil {
 		return TableNdl{}, errors.New(err.Error())
 	}
