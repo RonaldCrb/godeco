@@ -6,59 +6,59 @@ import (
 	deco "github.com/RonaldCrb/diving-decompression-go"
 )
 
-func TestNoDecompressionLimit(t *testing.T) {
-	dive := deco.Dive{
-		BottomTime: 300,
-		Depth:      147,
-	}
-	expectedNdl := 8
-
-	output := dive.NoDecompressionLimit()
-
-	if expectedNdl != output {
-		t.Errorf("Failed ! got %v want %c", output, expectedNdl)
-	} else {
-		t.Logf("Success !")
-	}
+type NdlTestPair struct {
+	dive     deco.Dive
+	expected uint16
 }
 
-/*
-// **************************************************************************************************
-// noDecompressionLimit 5 Tests
-test('noDecompressionLimit 147', () => {
+var NdlTestCases []NdlTestPair = []NdlTestPair{
+	{
+		expected: 8,
+		dive: deco.Dive{
+			BottomTime: 300,
+			Depth:      147,
+		},
+	},
+	{
+		expected: 9999,
+		dive: deco.Dive{
+			BottomTime: 300,
+			Depth:      20,
+		},
+	},
+	{
+		expected: 232,
+		dive: deco.Dive{
+			BottomTime: 300,
+			Depth:      33,
+		},
+	},
+	{
+		expected: 9999,
+		dive: deco.Dive{
+			BottomTime: 300,
+			Depth:      0,
+		},
+	},
+	{
+		expected: 0,
+		dive: deco.Dive{
+			BottomTime: 300,
+			Depth:      300,
+		},
+	},
+}
 
-  expect(noDecompressionLimit(dive)).toBe(8);
-});
-
-test('noDecompressionLimit 20', () => {
-  const dive = {
-    bottomTime: 300,
-    depth: 20,
-  };
-  expect(noDecompressionLimit(dive)).toBe('unlimited');
-});
-
-test('noDecompressionLimit 33', () => {
-  const dive = {
-    bottomTime: 300,
-    depth: 33,
-  };
-  expect(noDecompressionLimit(dive)).toBe(232);
-});
-
-test('noDecompressionLimit 98 undefined', () => {
-  const dive = {
-    bottomTime: 300,
-    depth: -1,
-  };
-  expect(noDecompressionLimit(dive)).toBe(undefined);
-});
-
-test('noDecompressionLimit 200 undefined', () => {
-  const dive = {
-    bottomTime: 300,
-    depth: 200,
-  };
-  expect(noDecompressionLimit(dive)).toBe(undefined);
-});
-*/
+func TestNoDecompressionLimit(t *testing.T) {
+	for _, d := range NdlTestCases {
+		di, err := d.dive.NoDecompressionLimit()
+		if err != nil {
+			t.Errorf("%s", err)
+		}
+		if di != d.expected {
+			t.Errorf("Failed ! got %v want %c", di, d.expected)
+		} else {
+			t.Logf("Success !")
+		}
+	}
+}

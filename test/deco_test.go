@@ -1,5 +1,7 @@
 package test
-// ****************************************************************************
+
+/*
+
 // decoDive 5 tests
 
 test('decoDive 99/135 decoObject', () => {
@@ -89,3 +91,5 @@ test('decoDive 61/125 => decoObject', () => {
     o2decoStops: [{ depth: 20, time: 51 }],
   });
 });
+
+*/
