@@ -11,65 +11,65 @@ import (
 
 // Group ...
 type Group struct {
-	GroupLetter string `json:"groupLetter"`
-	MinTime     uint16 `json:"minTime"`
-	MaxTime     uint16 `json:"maxTime"`
+	GroupLetter string `json:"group_letter"`
+	MinTime     uint16 `json:"min_time"`
+	MaxTime     uint16 `json:"max_time"`
 }
 
 // RowNdl ...
 type RowNdl struct {
-	MinFSW      uint16  `json:"minfsw"`
-	MaxFSW      uint16  `json:"maxfsw"`
+	MinFSW      uint16  `json:"min_fsw"`
+	MaxFSW      uint16  `json:"max_fsw"`
 	Unlimited   bool    `json:"unlimited"`
-	NoStopLimit uint16  `json:"noStopLimit"`
+	NoStopLimit uint16  `json:"no_stop_limit"`
 	Values      []Group `json:"values"`
 }
 
 // TableNdl ...
 type TableNdl struct {
-	TableCode string   `json:"tableCode"`
-	TableName string   `json:"tableName"`
-	TableData []RowNdl `json:"tableData"`
+	TableCode string   `json:"table_code"`
+	TableName string   `json:"table_name"`
+	TableData []RowNdl `json:"table_data"`
 }
 
 // table for surface interval time and repetitive letter
 
 // RowRgl ...
 type RowRgl struct {
-	GroupLetter string `json:"groupLetter"`
-	MinTime     uint16 `json:"minTime"`
-	MaxTime     uint16 `json:"maxTime"`
-	RepetLetter string `json:"repetLetter"`
+	GroupLetter string `json:"group_letter"`
+	MinTime     uint16 `json:"min_time"`
+	MaxTime     uint16 `json:"max_time"`
+	RepetLetter string `json:"repet_letter"`
 }
 
 // TableRgl ...
 type TableRgl struct {
-	TableCode string   `json:"tableCode"`
-	TableName string   `json:"tableName"`
-	TableData []RowRgl `json:"tableData"`
+	TableCode string   `json:"table_code"`
+	TableName string   `json:"table_name"`
+	TableData []RowRgl `json:"table_data"`
 }
 
 // table for residual nitrogen time
 
 // Rnt ...
 type Rnt struct {
-	MinDepth uint16 `json:"minDepth"`
-	MaxDepth uint16 `json:"maxDepth"`
+	MinDepth uint16 `json:"min_depth"`
+	MaxDepth uint16 `json:"max_depth"`
 	RNT      uint16 `json:"rnt"`
 }
 
 // RowRnt ...
 type RowRnt struct {
-	RepetLetter string `json:"repetLetter"`
+	RepetLetter string `json:"repet_letter"`
 	RNT         []Rnt  `json:"rnt"`
 }
 
 // TableRnt ...
 type TableRnt struct {
-	TableCode     string   `json:"tableCode"`
-	TableName     string   `json:"tableName"`
-	TableNote9981 string   `json:"tableNote9981"`
-	TableData     []RowRnt `json:"tableData"`
+	TableCode     string   `json:"table_code"`
+	TableName     string   `json:"table_name"`
+	TableNote9981 string   `json:"table_note_9981"`
+	TableData     []RowRnt `json:"table_data"`
 }
 
 // table for air decompression
@@ -82,39 +82,39 @@ type DecoStops struct {
 
 // RowDeco ...
 type RowDeco struct {
-	MinTime             uint16      `json:"minTime"`
-	MaxTime             uint16      `json:"maxTime"`
-	AIRTAT              string      `json:"airTAT"`
-	O2TAT               string      `json:"o2TAT"`
+	MinTime             uint16      `json:"min_time"`
+	MaxTime             uint16      `json:"max_time"`
+	AIRTAT              string      `json:"air_tat"`
+	O2TAT               string      `json:"o2_tat"`
 	TTFS                string      `json:"ttfs"`
 	O2CP                float32     `json:"o2cp"`
-	RepetLetter         string      `json:"repetLetter"`
-	SurDo2Recom         bool        `json:"surDo2Recom"`
-	ExceptionalExposure bool        `json:"exceptionalExposure"`
-	SurDo2Req           bool        `json:"surDo2Req"`
-	StrictlySurDo2      bool        `json:"strictlySurDo2"`
-	AirDecoStops        []DecoStops `json:"airDecoStops"`
-	O2decoStops         []DecoStops `json:"o2decoStops"`
+	RepetLetter         string      `json:"repetgroup_letter"`
+	SurDo2Recom         bool        `json:"surdo2_recommended"`
+	ExceptionalExposure bool        `json:"exceptional_exposure"`
+	SurDo2Req           bool        `json:"surdo2_required"`
+	StrictlySurDo2      bool        `json:"strict_surdo2"`
+	AirDecoStops        []DecoStops `json:"air_deco_stops"`
+	O2decoStops         []DecoStops `json:"o2_deco_stops"`
 }
 
 // DecoDepth ...
 type DecoDepth struct {
-	MinFSW uint16    `json:"minfsw"`
-	MaxFSW uint16    `json:"maxfsw"`
+	MinFSW uint16    `json:"min_fsw"`
+	MaxFSW uint16    `json:"max_fsw"`
 	Rows   []RowDeco `json:"rows"`
 }
 
 // TableAirDeco ...
 type TableAirDeco struct {
-	TableCode string      `json:"tableCode"`
-	TableName string      `json:"tableName"`
-	TableData []DecoDepth `json:"tableData"`
+	TableCode string      `json:"table_code"`
+	TableName string      `json:"table_name"`
+	TableData []DecoDepth `json:"table_data"`
 }
 
 // NoDecoTable returns a typed and serialized US Navy air
 // no-decompression table from rev7 of the US Navy dive manual.
 func NoDecoTable() (TableNdl, error) {
-	jsonFile, err := os.Open("JSON/usnavy-air-nodeco-rev7.json")
+	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-nodeco-rev7.json")
 	if err != nil {
 		return TableNdl{}, errors.New(err.Error())
 	}
@@ -133,7 +133,7 @@ func NoDecoTable() (TableNdl, error) {
 // DecoTable returns a typed and serialized US Navy air
 // decompression table from rev7 of the US Navy dive manual
 func DecoTable() (TableAirDeco, error) {
-	jsonFile, err := os.Open("JSON/usnavy-air-deco-rev7.json")
+	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-deco-rev7.json")
 	if err != nil {
 		return TableAirDeco{}, errors.New(err.Error())
 	}
@@ -149,7 +149,7 @@ func DecoTable() (TableAirDeco, error) {
 // RGLTable returns a typed and serialized US Navy repetitive group letter
 // table from rev7 of the US Navy dive manual
 func RGLTable() (TableRgl, error) {
-	jsonFile, err := os.Open("JSON/usnavy-air-repetgroup-rev7.json")
+	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-repetgroup-rev7.json")
 	if err != nil {
 		return TableRgl{}, errors.New(err.Error())
 	}
@@ -168,7 +168,7 @@ func RGLTable() (TableRgl, error) {
 // RNTTable returns a typed and serialized US Navy residual nitrogen time
 // table from rev7 of the US Navy dive manual
 func RNTTable() (TableRnt, error) {
-	jsonFile, err := os.Open("JSON/usnavy-air-rnt-rev7.json")
+	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-rnt-rev7.json")
 	if err != nil {
 		return TableRnt{}, errors.New(err.Error())
 	}
