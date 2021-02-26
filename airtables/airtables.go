@@ -5,6 +5,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"os"
+	"path/filepath"
 )
 
 // table for no decompression limit and group letter
@@ -114,7 +115,8 @@ type TableAirDeco struct {
 // NoDecoTable returns a typed and serialized US Navy air
 // no-decompression table from rev7 of the US Navy dive manual.
 func NoDecoTable() (TableNdl, error) {
-	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-nodeco-rev7.json")
+	path, err := filepath.Abs("../airtables/JSON/usnavy-air-nodeco-rev7.json")
+	jsonFile, err := os.Open(path)
 	if err != nil {
 		return TableNdl{}, errors.New(err.Error())
 	}
@@ -133,7 +135,8 @@ func NoDecoTable() (TableNdl, error) {
 // DecoTable returns a typed and serialized US Navy air
 // decompression table from rev7 of the US Navy dive manual
 func DecoTable() (TableAirDeco, error) {
-	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-deco-rev7.json")
+	path, err := filepath.Abs("../airtables/JSON/usnavy-air-deco-rev7.json")
+	jsonFile, err := os.Open(path)
 	if err != nil {
 		return TableAirDeco{}, errors.New(err.Error())
 	}
@@ -149,7 +152,8 @@ func DecoTable() (TableAirDeco, error) {
 // RGLTable returns a typed and serialized US Navy repetitive group letter
 // table from rev7 of the US Navy dive manual
 func RGLTable() (TableRgl, error) {
-	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-repetgroup-rev7.json")
+	path, err := filepath.Abs("../airtables/JSON/usnavy-air-repetgroup-rev7.json")
+	jsonFile, err := os.Open(path)
 	if err != nil {
 		return TableRgl{}, errors.New(err.Error())
 	}
@@ -168,7 +172,8 @@ func RGLTable() (TableRgl, error) {
 // RNTTable returns a typed and serialized US Navy residual nitrogen time
 // table from rev7 of the US Navy dive manual
 func RNTTable() (TableRnt, error) {
-	jsonFile, err := os.Open("../airtables/JSON/usnavy-air-rnt-rev7.json")
+	path, err := filepath.Abs("../airtables/JSON/usnavy-air-rnt-rev7.json")
+	jsonFile, err := os.Open(path)
 	if err != nil {
 		return TableRnt{}, errors.New(err.Error())
 	}
