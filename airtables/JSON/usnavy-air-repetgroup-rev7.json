@@ -1,1 +1,822 @@
-{"table_code":"USN-AIR-SIT/RGL","table_name":"US Navy no decompression table revision 7 - Residual Nitrogen Time table for repetitive Air Dives","table_data":[{"group_letter":"A","min_time":10,"max_time":140,"repet_letter":"A"},{"group_letter":"B","min_time":10,"max_time":76,"repet_letter":"B"},{"group_letter":"B","min_time":77,"max_time":216,"repet_letter":"A"},{"group_letter":"C","min_time":10,"max_time":55,"repet_letter":"C"},{"group_letter":"C","min_time":56,"max_time":131,"repet_letter":"B"},{"group_letter":"C","min_time":132,"max_time":271,"repet_letter":"A"},{"group_letter":"D","min_time":10,"max_time":52,"repet_letter":"D"},{"group_letter":"D","min_time":53,"max_time":107,"repet_letter":"C"},{"group_letter":"D","min_time":108,"max_time":183,"repet_letter":"B"},{"group_letter":"D","min_time":184,"max_time":323,"repet_letter":"A"},{"group_letter":"E","min_time":10,"max_time":52,"repet_letter":"E"},{"group_letter":"E","min_time":53,"max_time":104,"repet_letter":"D"},{"group_letter":"E","min_time":105,"max_time":159,"repet_letter":"C"},{"group_letter":"E","min_time":160,"max_time":235,"repet_letter":"B"},{"group_letter":"E","min_time":236,"max_time":375,"repet_letter":"A"},{"group_letter":"F","min_time":10,"max_time":52,"repet_letter":"F"},{"group_letter":"F","min_time":53,"max_time":104,"repet_letter":"E"},{"group_letter":"F","min_time":105,"max_time":157,"repet_letter":"D"},{"group_letter":"F","min_time":158,"max_time":211,"repet_letter":"C"},{"group_letter":"F","min_time":212,"max_time":288,"repet_letter":"B"},{"group_letter":"F","min_time":289,"max_time":428,"repet_letter":"A"},{"group_letter":"G","min_time":10,"max_time":52,"repet_letter":"G"},{"group_letter":"G","min_time":53,"max_time":104,"repet_letter":"F"},{"group_letter":"G","min_time":105,"max_time":157,"repet_letter":"E"},{"group_letter":"G","min_time":158,"max_time":209,"repet_letter":"D"},{"group_letter":"G","min_time":210,"max_time":263,"repet_letter":"C"},{"group_letter":"G","min_time":264,"max_time":340,"repet_letter":"B"},{"group_letter":"G","min_time":341,"max_time":480,"repet_letter":"A"},{"group_letter":"H","min_time":10,"max_time":52,"repet_letter":"H"},{"group_letter":"H","min_time":53,"max_time":104,"repet_letter":"G"},{"group_letter":"H","min_time":105,"max_time":157,"repet_letter":"F"},{"group_letter":"H","min_time":158,"max_time":209,"repet_letter":"E"},{"group_letter":"H","min_time":210,"max_time":261,"repet_letter":"D"},{"group_letter":"H","min_time":262,"max_time":316,"repet_letter":"C"},{"group_letter":"H","min_time":317,"max_time":392,"repet_letter":"B"},{"group_letter":"H","min_time":393,"max_time":532,"repet_letter":"A"},{"group_letter":"I","min_time":10,"max_time":52,"repet_letter":"I"},{"group_letter":"I","min_time":53,"max_time":104,"repet_letter":"H"},{"group_letter":"I","min_time":105,"max_time":157,"repet_letter":"G"},{"group_letter":"I","min_time":158,"max_time":209,"repet_letter":"F"},{"group_letter":"I","min_time":210,"max_time":261,"repet_letter":"E"},{"group_letter":"I","min_time":262,"max_time":313,"repet_letter":"D"},{"group_letter":"I","min_time":314,"max_time":368,"repet_letter":"C"},{"group_letter":"I","min_time":369,"max_time":444,"repet_letter":"B"},{"group_letter":"I","min_time":445,"max_time":574,"repet_letter":"A"},{"group_letter":"J","min_time":10,"max_time":52,"repet_letter":"J"},{"group_letter":"J","min_time":53,"max_time":104,"repet_letter":"I"},{"group_letter":"J","min_time":105,"max_time":157,"repet_letter":"H"},{"group_letter":"J","min_time":158,"max_time":209,"repet_letter":"G"},{"group_letter":"J","min_time":210,"max_time":261,"repet_letter":"F"},{"group_letter":"J","min_time":262,"max_time":313,"repet_letter":"E"},{"group_letter":"J","min_time":314,"max_time":366,"repet_letter":"D"},{"group_letter":"J","min_time":367,"max_time":420,"repet_letter":"C"},{"group_letter":"J","min_time":421,"max_time":496,"repet_letter":"B"},{"group_letter":"J","min_time":497,"max_time":636,"repet_letter":"A"},{"group_letter":"K","min_time":10,"max_time":52,"repet_letter":"K"},{"group_letter":"K","min_time":53,"max_time":104,"repet_letter":"J"},{"group_letter":"K","min_time":105,"max_time":157,"repet_letter":"I"},{"group_letter":"K","min_time":158,"max_time":209,"repet_letter":"H"},{"group_letter":"K","min_time":210,"max_time":261,"repet_letter":"G"},{"group_letter":"K","min_time":262,"max_time":313,"repet_letter":"F"},{"group_letter":"K","min_time":314,"max_time":366,"repet_letter":"E"},{"group_letter":"K","min_time":367,"max_time":418,"repet_letter":"D"},{"group_letter":"K","min_time":419,"max_time":472,"repet_letter":"C"},{"group_letter":"K","min_time":473,"max_time":549,"repet_letter":"B"},{"group_letter":"K","min_time":550,"max_time":689,"repet_letter":"A"},{"group_letter":"L","min_time":10,"max_time":52,"repet_letter":"L"},{"group_letter":"L","min_time":53,"max_time":104,"repet_letter":"K"},{"group_letter":"L","min_time":105,"max_time":157,"repet_letter":"J"},{"group_letter":"L","min_time":158,"max_time":209,"repet_letter":"I"},{"group_letter":"L","min_time":210,"max_time":261,"repet_letter":"H"},{"group_letter":"L","min_time":262,"max_time":313,"repet_letter":"G"},{"group_letter":"L","min_time":314,"max_time":366,"repet_letter":"F"},{"group_letter":"L","min_time":367,"max_time":418,"repet_letter":"E"},{"group_letter":"L","min_time":419,"max_time":470,"repet_letter":"D"},{"group_letter":"L","min_time":471,"max_time":524,"repet_letter":"C"},{"group_letter":"L","min_time":525,"max_time":601,"repet_letter":"B"},{"group_letter":"L","min_time":602,"max_time":741,"repet_letter":"A"},{"group_letter":"M","min_time":10,"max_time":52,"repet_letter":"M"},{"group_letter":"M","min_time":53,"max_time":104,"repet_letter":"L"},{"group_letter":"M","min_time":105,"max_time":157,"repet_letter":"K"},{"group_letter":"M","min_time":158,"max_time":209,"repet_letter":"J"},{"group_letter":"M","min_time":210,"max_time":261,"repet_letter":"I"},{"group_letter":"M","min_time":262,"max_time":313,"repet_letter":"H"},{"group_letter":"M","min_time":314,"max_time":366,"repet_letter":"G"},{"group_letter":"M","min_time":367,"max_time":418,"repet_letter":"F"},{"group_letter":"M","min_time":419,"max_time":470,"repet_letter":"E"},{"group_letter":"M","min_time":471,"max_time":522,"repet_letter":"D"},{"group_letter":"M","min_time":523,"max_time":577,"repet_letter":"C"},{"group_letter":"M","min_time":578,"max_time":653,"repet_letter":"B"},{"group_letter":"M","min_time":654,"max_time":793,"repet_letter":"A"},{"group_letter":"N","min_time":10,"max_time":52,"repet_letter":"N"},{"group_letter":"N","min_time":53,"max_time":104,"repet_letter":"M"},{"group_letter":"N","min_time":105,"max_time":157,"repet_letter":"L"},{"group_letter":"N","min_time":158,"max_time":209,"repet_letter":"K"},{"group_letter":"N","min_time":210,"max_time":261,"repet_letter":"J"},{"group_letter":"N","min_time":262,"max_time":313,"repet_letter":"I"},{"group_letter":"N","min_time":314,"max_time":366,"repet_letter":"H"},{"group_letter":"N","min_time":367,"max_time":418,"repet_letter":"G"},{"group_letter":"N","min_time":419,"max_time":470,"repet_letter":"F"},{"group_letter":"N","min_time":471,"max_time":522,"repet_letter":"E"},{"group_letter":"N","min_time":523,"max_time":574,"repet_letter":"D"},{"group_letter":"N","min_time":575,"max_time":629,"repet_letter":"C"},{"group_letter":"N","min_time":630,"max_time":705,"repet_letter":"B"},{"group_letter":"N","min_time":706,"max_time":845,"repet_letter":"A"},{"group_letter":"O","min_time":10,"max_time":52,"repet_letter":"O"},{"group_letter":"O","min_time":53,"max_time":104,"repet_letter":"N"},{"group_letter":"O","min_time":105,"max_time":157,"repet_letter":"M"},{"group_letter":"O","min_time":158,"max_time":209,"repet_letter":"L"},{"group_letter":"O","min_time":210,"max_time":261,"repet_letter":"K"},{"group_letter":"O","min_time":262,"max_time":313,"repet_letter":"J"},{"group_letter":"O","min_time":314,"max_time":366,"repet_letter":"I"},{"group_letter":"O","min_time":367,"max_time":418,"repet_letter":"H"},{"group_letter":"O","min_time":419,"max_time":470,"repet_letter":"G"},{"group_letter":"O","min_time":471,"max_time":522,"repet_letter":"F"},{"group_letter":"O","min_time":523,"max_time":574,"repet_letter":"E"},{"group_letter":"O","min_time":575,"max_time":627,"repet_letter":"D"},{"group_letter":"O","min_time":628,"max_time":681,"repet_letter":"C"},{"group_letter":"O","min_time":682,"max_time":757,"repet_letter":"B"},{"group_letter":"O","min_time":758,"max_time":898,"repet_letter":"A"},{"group_letter":"O","min_time":10,"max_time":52,"repet_letter":"Z"},{"group_letter":"O","min_time":53,"max_time":104,"repet_letter":"O"},{"group_letter":"O","min_time":105,"max_time":157,"repet_letter":"N"},{"group_letter":"O","min_time":158,"max_time":209,"repet_letter":"M"},{"group_letter":"O","min_time":210,"max_time":261,"repet_letter":"L"},{"group_letter":"O","min_time":262,"max_time":313,"repet_letter":"K"},{"group_letter":"O","min_time":314,"max_time":366,"repet_letter":"J"},{"group_letter":"O","min_time":367,"max_time":418,"repet_letter":"I"},{"group_letter":"O","min_time":419,"max_time":470,"repet_letter":"H"},{"group_letter":"O","min_time":471,"max_time":522,"repet_letter":"G"},{"group_letter":"O","min_time":523,"max_time":574,"repet_letter":"F"},{"group_letter":"O","min_time":575,"max_time":627,"repet_letter":"E"},{"group_letter":"O","min_time":628,"max_time":679,"repet_letter":"D"},{"group_letter":"O","min_time":680,"max_time":733,"repet_letter":"C"},{"group_letter":"O","min_time":734,"max_time":810,"repet_letter":"B"},{"group_letter":"O","min_time":811,"max_time":950,"repet_letter":"A"}]}
+{
+  "table_code": "USN-AIR-SIT/RGL",
+  "table_name": "US Navy no decompression table revision 7 - Residual Nitrogen Time table for repetitive Air Dives",
+  "table_data": [
+    {
+      "group_letter": "A",
+      "min_time": 10,
+      "max_time": 140,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "B",
+      "min_time": 10,
+      "max_time": 76,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "B",
+      "min_time": 77,
+      "max_time": 216,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "C",
+      "min_time": 10,
+      "max_time": 55,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "C",
+      "min_time": 56,
+      "max_time": 131,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "C",
+      "min_time": 132,
+      "max_time": 271,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "D",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "D",
+      "min_time": 53,
+      "max_time": 107,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "D",
+      "min_time": 108,
+      "max_time": 183,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "D",
+      "min_time": 184,
+      "max_time": 323,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "E",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "E",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "E",
+      "min_time": 105,
+      "max_time": 159,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "E",
+      "min_time": 160,
+      "max_time": 235,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "E",
+      "min_time": 236,
+      "max_time": 375,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 158,
+      "max_time": 211,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 212,
+      "max_time": 288,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "F",
+      "min_time": 289,
+      "max_time": 428,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 210,
+      "max_time": 263,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 264,
+      "max_time": 340,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "G",
+      "min_time": 341,
+      "max_time": 480,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 262,
+      "max_time": 316,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 317,
+      "max_time": 392,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "H",
+      "min_time": 393,
+      "max_time": 532,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 314,
+      "max_time": 368,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 369,
+      "max_time": 444,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "I",
+      "min_time": 445,
+      "max_time": 574,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 367,
+      "max_time": 420,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 421,
+      "max_time": 496,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "J",
+      "min_time": 497,
+      "max_time": 636,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 419,
+      "max_time": 472,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 473,
+      "max_time": 549,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "K",
+      "min_time": 550,
+      "max_time": 689,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "L"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 419,
+      "max_time": 470,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 471,
+      "max_time": 524,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 525,
+      "max_time": 601,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "L",
+      "min_time": 602,
+      "max_time": 741,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "M"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "L"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 419,
+      "max_time": 470,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 471,
+      "max_time": 522,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 523,
+      "max_time": 577,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 578,
+      "max_time": 653,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "M",
+      "min_time": 654,
+      "max_time": 793,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "N"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "M"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "L"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 419,
+      "max_time": 470,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 471,
+      "max_time": 522,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 523,
+      "max_time": 574,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 575,
+      "max_time": 629,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 630,
+      "max_time": 705,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "N",
+      "min_time": 706,
+      "max_time": 845,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "O"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "N"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "M"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "L"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 419,
+      "max_time": 470,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 471,
+      "max_time": 522,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 523,
+      "max_time": 574,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 575,
+      "max_time": 627,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 628,
+      "max_time": 681,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 682,
+      "max_time": 757,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 758,
+      "max_time": 898,
+      "repet_letter": "A"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 10,
+      "max_time": 52,
+      "repet_letter": "Z"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 53,
+      "max_time": 104,
+      "repet_letter": "O"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 105,
+      "max_time": 157,
+      "repet_letter": "N"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 158,
+      "max_time": 209,
+      "repet_letter": "M"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 210,
+      "max_time": 261,
+      "repet_letter": "L"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 262,
+      "max_time": 313,
+      "repet_letter": "K"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 314,
+      "max_time": 366,
+      "repet_letter": "J"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 367,
+      "max_time": 418,
+      "repet_letter": "I"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 419,
+      "max_time": 470,
+      "repet_letter": "H"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 471,
+      "max_time": 522,
+      "repet_letter": "G"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 523,
+      "max_time": 574,
+      "repet_letter": "F"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 575,
+      "max_time": 627,
+      "repet_letter": "E"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 628,
+      "max_time": 679,
+      "repet_letter": "D"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 680,
+      "max_time": 733,
+      "repet_letter": "C"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 734,
+      "max_time": 810,
+      "repet_letter": "B"
+    },
+    {
+      "group_letter": "O",
+      "min_time": 811,
+      "max_time": 950,
+      "repet_letter": "A"
+    }
+  ]
+}

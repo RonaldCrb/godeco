@@ -56,13 +56,13 @@
 //! increase allowed diving depth and time limits and shortened decompression
 //! procedures with economical purposes.
 
-package deco
+package godeco
 
 import (
 	"errors"
 	"fmt"
 
-	"github.com/RonaldCrb/diving-decompression-go/airtables"
+	tables "github.com/RonaldCrb/godeco/airtables"
 )
 
 // Dive object
@@ -83,7 +83,7 @@ func (d Dive) NoDecompressionLimit() (uint16, error) {
 		return ndl, nil
 	}
 
-	table, err := airtables.NoDecoTable()
+	table, err := tables.NoDecoTable()
 	if err != nil {
 		return 0, errors.New(err.Error())
 	}
@@ -104,7 +104,7 @@ func (d Dive) NoDecompressionLimit() (uint16, error) {
 func (d Dive) GroupLetter() (string, error) {
 	var gl string
 
-	nodecoTable, err := airtables.NoDecoTable()
+	nodecoTable, err := tables.NoDecoTable()
 	if err != nil {
 		return "", errors.New(err.Error())
 	}
@@ -140,13 +140,13 @@ func (d Dive) GroupLetter() (string, error) {
 // the depth is expressed in feet of sea water
 // the bottom_time is expressed in minutes
 // the decompression profile is returned as a RowDeco struct
-func (d Dive) DecoDive() (airtables.RowDeco, error) {
-	table, err := airtables.DecoTable()
+func (d Dive) DecoDive() (tables.RowDeco, error) {
+	table, err := tables.DecoTable()
 	if err != nil {
-		return airtables.RowDeco{}, errors.New("Error deserializing no decompression table")
+		return tables.RowDeco{}, errors.New("Error deserializing no decompression table")
 	}
 
-	var decoProfile airtables.RowDeco = airtables.RowDeco{}
+	var decoProfile tables.RowDeco = tables.RowDeco{}
 
 	for _, rd := range table.TableData {
 		if rd.MinFSW <= d.Depth && d.Depth <= rd.MaxFSW {

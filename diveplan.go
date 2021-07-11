@@ -1,9 +1,9 @@
-package deco
+package godeco
 
 import (
 	"fmt"
 
-	"github.com/RonaldCrb/diving-decompression-go/airtables"
+	"github.com/RonaldCrb/godeco/airtables"
 )
 
 // DivePlan ...

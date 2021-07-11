@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	deco "github.com/RonaldCrb/diving-decompression-go"
+	deco "github.com/RonaldCrb/godeco"
 )
 
 type RlTestPair struct {

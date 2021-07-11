@@ -1,3 +1,3 @@
-module github.com/RonaldCrb/diving-decompression-go
+module github.com/RonaldCrb/godeco
 
-go 1.15
+go 1.16

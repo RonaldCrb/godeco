@@ -1,48 +1,48 @@
-package test
+package godeco_test
 
 import (
 	"testing"
 
-	deco "github.com/RonaldCrb/godeco"
+	"github.com/RonaldCrb/godeco"
 )
 
 type NdlTestPair struct {
-	dive     deco.Dive
+	dive     godeco.Dive
 	expected uint16
 }
 
 var NdlTestCases []NdlTestPair = []NdlTestPair{
 	{
 		expected: 8,
-		dive: deco.Dive{
+		dive: godeco.Dive{
 			BottomTime: 300,
 			Depth:      147,
 		},
 	},
 	{
 		expected: 9999,
-		dive: deco.Dive{
+		dive: godeco.Dive{
 			BottomTime: 300,
 			Depth:      20,
 		},
 	},
 	{
 		expected: 232,
-		dive: deco.Dive{
+		dive: godeco.Dive{
 			BottomTime: 300,
 			Depth:      33,
 		},
 	},
 	{
 		expected: 9999,
-		dive: deco.Dive{
+		dive: godeco.Dive{
 			BottomTime: 300,
 			Depth:      0,
 		},
 	},
 	{
 		expected: 0,
-		dive: deco.Dive{
+		dive: godeco.Dive{
 			BottomTime: 300,
 			Depth:      300,
 		},
