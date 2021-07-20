@@ -1,11 +1,9 @@
 package airtables
 
 import (
+	"embed"
 	"encoding/json"
 	"errors"
-	"io/ioutil"
-	"os"
-	"path/filepath"
 )
 
 // table for no decompression limit and group letter
@@ -112,79 +110,66 @@ type TableAirDeco struct {
 	TableData []DecoDepth `json:"table_data"`
 }
 
+//go:embed JSON/usnavy-air-nodeco-rev7.json
+var nodecoTable embed.FS
+
+//go:embed JSON/usnavy-air-deco-rev7.json
+var decoTable embed.FS
+
+//go:embed JSON/usnavy-air-repetgroup-rev7.json
+var rglTable embed.FS
+
+//go:embed JSON/usnavy-air-rnt-rev7.json
+var rntTable embed.FS
+
 // NoDecoTable returns a typed and serialized US Navy air
 // no-decompression table from rev7 of the US Navy dive manual.
 func NoDecoTable() (TableNdl, error) {
-	path, err := filepath.Abs("../airtables/JSON/usnavy-air-nodeco-rev7.json")
-	jsonFile, err := os.Open(path)
-	if err != nil {
-		return TableNdl{}, errors.New(err.Error())
-	}
-	defer jsonFile.Close()
-
-	byteValue, err := ioutil.ReadAll(jsonFile)
+	jsonFile, err := nodecoTable.ReadFile("JSON/usnavy-air-nodeco-rev7.json")
 	if err != nil {
 		return TableNdl{}, errors.New(err.Error())
 	}
 	var sertab TableNdl
 
-	json.Unmarshal(byteValue, &sertab)
+	json.Unmarshal(jsonFile, &sertab)
 	return sertab, nil
 }
 
 // DecoTable returns a typed and serialized US Navy air
 // decompression table from rev7 of the US Navy dive manual
 func DecoTable() (TableAirDeco, error) {
-	path, err := filepath.Abs("../airtables/JSON/usnavy-air-deco-rev7.json")
-	jsonFile, err := os.Open(path)
+	jsonFile, err := decoTable.ReadFile("JSON/usnavy-air-deco-rev7.json")
 	if err != nil {
 		return TableAirDeco{}, errors.New(err.Error())
 	}
-	defer jsonFile.Close()
-
-	byteValue, _ := ioutil.ReadAll(jsonFile)
 	var sertab TableAirDeco
 
-	json.Unmarshal(byteValue, &sertab)
+	json.Unmarshal(jsonFile, &sertab)
 	return sertab, nil
 }
 
 // RGLTable returns a typed and serialized US Navy repetitive group letter
 // table from rev7 of the US Navy dive manual
 func RGLTable() (TableRgl, error) {
-	path, err := filepath.Abs("../airtables/JSON/usnavy-air-repetgroup-rev7.json")
-	jsonFile, err := os.Open(path)
-	if err != nil {
-		return TableRgl{}, errors.New(err.Error())
-	}
-	defer jsonFile.Close()
-
-	byteValue, err := ioutil.ReadAll(jsonFile)
+	jsonFile, err := rglTable.ReadFile("JSON/usnavy-air-repetgroup-rev7.json")
 	if err != nil {
 		return TableRgl{}, errors.New(err.Error())
 	}
 	var sertab TableRgl
 
-	json.Unmarshal(byteValue, &sertab)
+	json.Unmarshal(jsonFile, &sertab)
 	return sertab, nil
 }
 
 // RNTTable returns a typed and serialized US Navy residual nitrogen time
 // table from rev7 of the US Navy dive manual
 func RNTTable() (TableRnt, error) {
-	path, err := filepath.Abs("../airtables/JSON/usnavy-air-rnt-rev7.json")
-	jsonFile, err := os.Open(path)
-	if err != nil {
-		return TableRnt{}, errors.New(err.Error())
-	}
-	defer jsonFile.Close()
-
-	byteValue, err := ioutil.ReadAll(jsonFile)
+	jsonFile, err := rntTable.ReadFile("JSON/usnavy-air-rnt-rev7.json")
 	if err != nil {
 		return TableRnt{}, errors.New(err.Error())
 	}
 	var sertab TableRnt
 
-	json.Unmarshal(byteValue, &sertab)
+	json.Unmarshal(jsonFile, &sertab)
 	return sertab, nil
 }
